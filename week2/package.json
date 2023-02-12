@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "node-navigator": "^1.0.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
