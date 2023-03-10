@@ -2,8 +2,7 @@ import express = require("express")
 import morgan = require("morgan")
 import fs from "fs"
 // @ts-ignore
-import data from './people.json'
-import {json} from "express";
+import data from '../people.json'
 
 const app = express()
 console.log(process.env)
@@ -22,7 +21,6 @@ if (process.env.NODE_ENV === 'development'){
 }
 
 app.use(express.json()) // body parser for JSON data
-app.use(express.static(`${__dirname}/public`))      // http://localhost:3000/homepage.html
 
 app.get("/", (req, res) => {
     res.status(200)
